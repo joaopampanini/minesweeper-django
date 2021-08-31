@@ -76,7 +76,7 @@ class Game(models.Model):
                 'mines': self.mines
             }
 
-        if x >= len(self.board[y][x]) or y >= len(self.board[y]):
+        if x >= len(self.board[0]) or y >= len(self.board):
             return {
                 'result': 'game-over',
                 'mines': self.mines
