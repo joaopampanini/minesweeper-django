@@ -14,13 +14,14 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+print(BASE_DIR)
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jviq3(qfe*0_ogslc6^abt65o3=m1xf(0^8z=447gagwe*^#x+'
+SECRET_KEY = 'jviq3(qfe*0_ogslc6^abt65o3=m1xf(0^8z=447gagwe*^#x+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'game',
 ]
 
 MIDDLEWARE = [

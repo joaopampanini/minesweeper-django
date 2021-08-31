@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+    <link rel='stylesheet' type='text/css' href="{% static 'css/bootstrap.css' %}">
+    <link rel='stylesheet' type='text/css' href="{% static 'css/main.css' %}">
+    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.fittext.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+  </head>
+
+  <body>
+    <div id="csrf" class="hidden" data-token="{{csrf_token}}"></div>
+    <div class="container">
+      <div class="header">
+        <h1>Minesweeper</h1>
+        <h5>Old school game implemented for Deviget test.</h5>
+      </div>
+
+      <div class="body">
+        <div class="title">
+          <h3>Choose your game level</h3>
+        </div>
+
+        <div class="levels" data-url="{% url 'new-game' %}">
+          <div>
+            <p>
+              <a class="btn btn-lg btn-info" data-x="9"  data-y="9"  data-mines="10" data-fsize="2.0" role="button">Beginner (9x9)</a>
+            </p>
+            <p>
+              <a class="btn btn-lg btn-info" data-x="16" data-y="16" data-mines="40" data-fsize="3.2" role="button">Intermediate (16x16)</a>
+            </p>
+            <p>
+              <a class="btn btn-lg btn-info" data-x="30" data-y="16" data-mines="99" data-fsize="5.0" role="button">Expert (30x16)</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="game hidden">
+
+          <div class="counters">
+            <div class='mines-counter' data-mines='0'><p>mines</p><span>000</span></div>
+            <div class='give-up'>
+              <a class="btn btn-lg btn-info" role="button">Give up</a>
+            </div>
+            <div class='seconds-counter' data-start=""><p>time</p><span>000</span></div>
+          </div>
+
+          <div class="field">
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
