@@ -10,4 +10,4 @@ RUN pip install -r /opt/minesweeper-django/requirements.pip
 
 WORKDIR /opt/minesweeper-django
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["bash", "run_server.sh"]
