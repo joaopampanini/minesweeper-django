@@ -1,0 +1,53 @@
+[
+  {
+    "model": "game.game",
+    "pk": 1,
+    "fields": {
+      "create_date": "2021-09-01T23:22:49.891Z",
+      "start_date": null,
+      "end_date": null,
+      "won": false,
+      "cells": 81,
+      "opened": 0,
+      "board": [
+        [0, 1,-1, 2,-1, 1, 0, 0, 0],
+        [1, 2, 2, 2, 1, 1, 0, 0, 0],
+        [1,-1, 2, 2, 2, 2, 1, 1, 0],
+        [1, 1, 2,-1,-1, 2,-1, 1, 0],
+        [0, 0, 1, 2, 2, 2, 1, 1, 0],
+        [1, 1, 1, 0, 0, 0, 0, 0, 0],
+        [1,-1, 1, 1, 1, 2, 2, 2, 1],
+        [1, 1, 1, 1,-1, 2,-1,-1, 1],
+        [0, 0, 0, 1, 1, 2, 2, 2, 1]
+      ],
+      "mines": [
+        [4,7], [3,3], [7,7], [1,2], [2,0], [4,3], [6,3], [6,7], [4,0], [1,6]
+      ]
+    }
+  }, {
+    "model": "game.game",
+    "pk": 2,
+    "fields": {
+      "create_date": "2021-09-01T23:22:49.891Z",
+      "start_date": null,
+      "end_date": null,
+      "won": false,
+      "cells": 81,
+      "opened": 70,
+      "board": [
+        [null, null,   -1, null,   -1,    1, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null,   -1, null, null, null, null, null, null, null],
+        [null, null, null,   -1,   -1, null,   -1, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null, null, null, null, null, null, null, null, null],
+        [null,   -1, null, null, null, null, null, null, null],
+        [null, null, null, null,   -1, null,   -1,   -1, null],
+        [null, null, null, null, null, null, null, null, null]
+      ],
+      "mines": [
+        [4,7], [3,3], [7,7], [1,2], [2,0], [4,3], [6,3], [6,7], [4,0], [1,6]
+      ]
+    }
+  }
+]

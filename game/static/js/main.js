@@ -65,11 +65,12 @@ $( document ).ready(function() {
 
             cell.removeClass("closed");
             cell.addClass("bomb");
-            $(".give-up a").text("You Died !!!");
-            $(".give-up a").removeClass("btn-info");
-            $(".give-up a").addClass("btn-danger");
-            $(".game").addClass("disable-click")
         });
+
+        $(".give-up a").text("You Died !!!");
+        $(".give-up a").removeClass("btn-info");
+        $(".give-up a").addClass("btn-danger");
+        $(".game").addClass("disable-click")
     }
 
     function updateMineCounter(num) {

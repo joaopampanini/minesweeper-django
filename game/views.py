@@ -8,10 +8,11 @@ from game.models import Game
 
 class GameView(View):
     def get(self, request, *args, **kwargs):
+        # Check if game exist, if not force a game-over
         if not Game.objects.filter(id=kwargs['id']).exists():
             return JsonResponse({
                 'result': 'game-over',
-                'mines': self.mines
+                'mines': []
             })
 
         game = Game.objects.get(id=kwargs['id'])
